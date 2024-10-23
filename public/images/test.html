@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Vote App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-100 text-gray-900 leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-gray-200 py-4 border-b border-green-500 text-white">
+        <div class="container mx-auto flex justify-between items-center gap-8">
+            <img src="public/images/download.png" alt="header logo" class="h-10">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img src="public/images/img_user.png" alt="User logo" class="h-10 w-10 rounded-full">
+                    </a>
+                    <div>
+                        <p class="font-bold text-black text-sm">Micheal Henry</p>
+                        <p class="text-xs text-black">@admin user</p>
+                    </div>
+                </div>
+                <button class="bg-white text-red-600 border border-red-600 px-3 py-1 rounded hover:bg-red-600 hover:text-white flex items-center space-x-1 cursor-pointer">
+                    <img src="public/images/sign-out.jpeg" alt="Sign out" class="w-5">
+                    <span>Sign out</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Completed Polls Section -->
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl mb-6 text-gray-900">Ongoing Polls</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Poll Item -->
+            <div class="bg-white rounded-lg p-6 shadow-sm flex flex-col justify-between">
+                <div class="flex items-center mb-4">
+                    <img src="public/images/team-m.png" alt="member image" class="h-16 w-16 rounded-full mr-4">
+                    <h2 class="text-lg font-semibold">August Team Member</h2>
+                </div>
+                <select class="w-full mb-4 p-2 border rounded">
+                    <option value="option1">option1</option>
+                    <option value="option2">option2</option>
+                    <option value="option3">option3</option>
+                </select>
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">32</h3>
+                    <p class="text-gray-600">Nominees</p>
+                </div>
+                <button class="bg-gray-100 text-black rounded-full px-4 py-2 flex items-center space-x-2 cursor-pointer">
+                    <img src="public/images/calender.png" alt="Calender" class="w-5">
+                    <span>23 days remaining</span>
+                </button>
+                <div class="flex justify-between items-center mt-4 bg-blue-50 p-3 rounded">
+                    <p class="text-green-600 text-sm cursor-pointer">View Poll</p>
+                    <img src="public/images/img_arrow_right.png" alt="arrow image" class="w-5">
+                </div>
+            </div>
+            
+            <!-- Repeat for other poll items -->
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-8 flex justify-center space-x-2">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">1</button>
+            <p class="text-gray-600">2</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">Next</button>
+        </div>
+    </div>
+
+</body>
+</html>
